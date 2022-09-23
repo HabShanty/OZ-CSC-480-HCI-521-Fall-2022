@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  discordbot:
+      build: ./DiscordBot
+      #ports host/container
+      #ports: -
+  mysql:
+    build: ./Database
+    #ports: 33060:33060
+  open-liberty: 
+      build: ./OpenLiberty
